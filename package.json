@@ -1,0 +1,17 @@
+{
+  "name": "runewords-react",
+  "version": "1.0.0",
+  "description": "A simple project that makes runewords more accessible",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run deploy --prefix frontend",
+    "dev": "npm run dev --prefix frontend"
+  },
+  "keywords": [
+    "diablo",
+    "runewords"
+  ],
+  "author": "codingLogan",
+  "license": "ISC"
+}

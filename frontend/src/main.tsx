@@ -7,23 +7,26 @@ import ErrorPage from "./pages/ErrorPage.tsx";
 import RunewordPage from "./pages/RunewordPage.tsx";
 import RunesPage from "./pages/RunesPage.tsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/runewords",
-        element: <RunewordPage />,
-      },
-      {
-        path: "/runes",
-        element: <RunesPage />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/runewords",
+          element: <RunewordPage />,
+        },
+        {
+          path: "/runes",
+          element: <RunesPage />,
+        },
+      ],
+    },
+  ],
+  { basename: "/runewords-react/" }
+);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
