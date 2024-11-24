@@ -6,6 +6,10 @@ const RunewordComponent = ({ word }: { word: Runeword }) => {
       <h2>
         {word.name} <i style={{ fontSize: "0.5em" }}>Lvl {word.level}</i>
       </h2>
+
+      {word.runeOrder.map((runeName) => (
+        <img src={`/runewords-react/runes/${runeName.toLowerCase()}.webp`} />
+      ))}
       <div>{word.runeOrder.join(" -> ")}</div>
 
       <p style={{ textDecorationLine: "underline" }}>
